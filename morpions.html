@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Asset/CSS/morpions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Morpions</title>
+</head>
+
+<body>
+    <header>
+        <div class="picture">
+            <img src="./Asset/img/luigi.png"  alt="mario" width="100px">
+        </div>
+        <h1><img src="./Asset/img/titre.png" alt="titre" width="600px"></h1>
+        <div class="picture">
+            <img id="mario" src="./Asset/img/mario1.png" alt="mario" width="150px">
+        </div>
+    </header>
+
+    <main>
+        <div id="morpions">
+            <div>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+            </div>
+            <div>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+            </div>
+            <div>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+                <button class="select animate__animated" onclick="play(this)"></button>
+            </div>
+        </div>
+
+    <div></div>
+    <div id="player" class="police">
+        <p id="style"></p>
+    </div>
+    </div>
+    <div id="score">
+        <p class="police">Score Joueur 1 : <span id="score1"></span></p>
+        <p class="police">Score Joueur 2 : <span id="score2"></span></p>
+        <p class="police">Match nuls : <span id="soreNul"></span></p>
+    </div>
+    <div id="replay">
+        <button class="custom-btn btn-12"><span id="audio" onclick="replay()">Here We
+                Go!</span><span>Rejouer</span></button>
+    </div>
+    
+    <div id="random">
+        <button class="cpu"><img src="./Asset/img/cube.png" alt="cube" height="100px" id="cube"
+                onclick="cpuMode()"><br> Joue contre Mario
+        </button>
+        <button id="refresh"><img src="./Asset/img/coins.png" alt="coins" height="100px" 
+                onclick="restart()"><br> Joue une nouvelle manche
+        </button>
+    </div>
+</main>
+    <script src="./Asset/JS/morpions.js"></script>
+</body>
+
+</html>

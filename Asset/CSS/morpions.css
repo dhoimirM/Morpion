@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "mario1";
+    font-family: "mario";
+    src: url(../font/SuperMario256.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.police {
+    font-family: "mario";
+}
+
+
+body {
+    background-image: url(../img/2x1_SuperMarioHub_bg.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+#morpions {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    background-color: #EB984E;
+    align-items: center;
+    padding: 10px;
+    border-width: 2px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid;
+}
+
+#morpions button {
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 5px;
+    float: left;
+    border-width: 2px;
+}
+
+#player {
+    display: flex;
+    justify-content: center;
+    background-color: #AB4B11;
+    padding: 10px 0;
+    align-items: center;
+    margin: auto;
+    width: 290px;
+    height: 50px;
+    border: solid;
+    font-size: 100%;
+}
+
+
+#replay {
+    display: flex;
+    justify-content: center;
+    background-color: #AB4B11;
+    padding: 10px 0;
+    align-items: center;
+    margin: auto;
+    width: 290px;
+    border: solid;
+}
+
+#score {
+    background-color: #EB984E;
+    padding: 10px 0;
+    align-items: center;
+    margin: auto;
+    width: 290px;
+    text-align: center;
+    border: solid;
+}
+
+#style{
+    color: black;
+}
+
+#random{
+    display: flex;
+    justify-content: space-around;
+    margin: 650px;
+    align-items: center;
+    font-family: "mario";
+    margin-top: 15px;
+}
+
+.cpu{
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "mario";
+}
+
+#refresh{
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "mario";
+}
+
+.custom-btn{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "mario";
+}
+
+
+.btn-12 {
+    justify-content: center;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    
+}
+
+.btn-12 span {
+    background: black;
+    background: linear-gradient(0deg, #EB984E 0%, #EB984E 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow: inset 2px 2px 2px 0px black,
+        7px 7px 20px 0px black,
+        4px 4px 5px 0px black;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow:
+        -7px -7px 20px 0px black,
+        -4px -4px 5px 0px black,
+        7px 7px 20px 0px #AB4B11,
+        4px 4px 5px 0px #AB4B11;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px black,
+        7px 7px 20px 0px #AB4B11,
+        4px 4px 5px 0px #AB4B11;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px #AB4B11,
+        7px 7px 20px 0px #AB4B11,
+        4px 4px 5px 0px #AB4B11;
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+
+
+#etoile{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+@media screen and (max-width:870px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 img{
+        width: 200px;
+    }
+    .picture img{
+        width: 70px;
+    }
+    #mario{
+        width: 100px;
+    }
+
+    #morpions button {
+        width: 60px;
+        height: 60px;
+        font-weight: bold;
+    }
+    #player {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        padding: 5px 0;
+        align-items: center;
+        margin: auto;
+        width: 230px;
+        height: 30px;
+        font-size: 100%;
+    }
+
+    #score {
+        padding: 5px 0;
+        align-items: center;
+        width: 230px;
+    }
+    
+    #replay {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        align-items: center;
+        margin: auto;
+        width: 230px;
+        
+    }
+
+    #random{
+        padding: 8px;
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+    }
+    #random img{
+        height: 50px;
+    }
+
+    
+}
